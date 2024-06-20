@@ -5,6 +5,8 @@ import { ProductType, SelectedPage } from '../types/types'
 import {motion} from 'framer-motion'
 import useMediaQuery from '../hooks/useMediaQuery';
 import footHomeImg from '../assets/images/cannabisCultivation.jpg'
+import productImg2 from '../assets/images/productImg2.png'
+import productImg3 from '../assets/images/productImg3.png'
 
 
 const products: Array<ProductType> = [
@@ -15,12 +17,12 @@ const products: Array<ProductType> = [
   },
   {
     title: 'title2',
-    img:productImg,
+    img:productImg2,
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quos adipisci totam doloribus accusantium cumque sit placeat necessitatibus accusamus. Sed expedita temporibus blanditiis dolorem, qui corporis esse culpa id natus?'
   },
   {
     title: 'title3',
-    img:productImg,
+    img:productImg3,
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quos adipisci totam doloribus accusantium cumque sit placeat necessitatibus accusamus. Sed expedita temporibus blanditiis dolorem, qui corporis esse culpa id natus?'
 
   },
@@ -31,12 +33,12 @@ const products: Array<ProductType> = [
   },
   {
     title: 'title5',
-    img:productImg,
+    img:productImg2,
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quos adipisci totam doloribus accusantium cumque sit placeat necessitatibus accusamus. Sed expedita temporibus blanditiis dolorem, qui corporis esse culpa id natus?'
   },
   {
     title: 'title6',
-    img:productImg,
+    img:productImg3,
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quos adipisci totam doloribus accusantium cumque sit placeat necessitatibus accusamus. Sed expedita temporibus blanditiis dolorem, qui corporis esse culpa id natus?'
   },
    

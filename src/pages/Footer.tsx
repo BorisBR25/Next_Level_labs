@@ -55,7 +55,9 @@ const Footer = () => {
     <div className="mt-16 md:w-1/4">
       <h4 className="font-bold">Follow Us On</h4>
       <div>
-        <img className="h-10 mt-5" src={instagramLogo} alt="" />
+        <a href="https://www.instagram.com/nextlevellabs/">
+          <img className="h-10 mt-5" src={instagramLogo} alt="" />
+        </a>
       </div>
     </div>
 
