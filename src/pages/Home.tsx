@@ -1,14 +1,10 @@
-import useMediaQuery from '../hooks/useMediaQuery';
+//import useMediaQuery from '../hooks/useMediaQuery';
 import { SelectedPage } from '../types/types';
 //import ActionButton from '../components/ActionButton';
-import homeImange from '../assets/images/homeImg.png'
-import footHomeImg from '../assets/images/cannabisCultivation.jpg'
-import homeText from '../assets/images/home-text.png'
-import homeText2 from '../assets/images/home-text2.png'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { motion } from 'framer-motion';
 import Link from '../components/Link';
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+
 import image1 from '../assets/images/backgroundImg.jpg'
 
 
@@ -20,7 +16,7 @@ type Props = {
 
 const Home = ({ selectedPage, setSelectedPage }: Props) => {
 
-  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
+  // const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
 
   return (
     <section
