@@ -1,6 +1,6 @@
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { SelectedPage } from '../types/types'
-import { useState } from 'react'
+
 
 type Props = {
     page: string;
@@ -10,7 +10,7 @@ type Props = {
 
 const Link = ({page, selectedPage, setSelectedPage}: Props) => {
   const lowerCasePage = page.toLocaleUpperCase().replace(/ /g, "") as SelectedPage;
-  const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
+  
   
 
   return (
