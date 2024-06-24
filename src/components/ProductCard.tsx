@@ -17,8 +17,8 @@ const ProductCard = ({img, title, description, setSelectedPage}: Props) => {
     whileHover={{scale:1.1}}
     >
         <div className='mb-4 flex flex-wrap justify-center'>
-            <div>
-              <img className='rounded-lg' src={`${img}`}
+            <div className='  overflow-hidden w-full h-auto'>
+              <img className='rounded-lg w-full h-auto' src={`${img}`}
               />
             </div>
             <h4 className='font-bold'>{title}</h4>

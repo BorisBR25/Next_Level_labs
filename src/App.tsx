@@ -29,21 +29,22 @@ function App() {
 
   return (
     <>
+      
       <div className='app bg-white'>
+      
         <Navbar
           isTopOfPage={isTopOfPage}
           selectedPage={selectedPage} 
           setSelectedPage={setSelectedPage}
         />
-
-        <Home
-        selectedPage={selectedPage} 
-        setSelectedPage={setSelectedPage}/>
-        {/* <Carousel/> */}
-        <AboutUs setSelectedPage={setSelectedPage}/>
-        <Products setSelectedPage={setSelectedPage}/>
-        <ContactUs setSelectedPage={setSelectedPage}/>
-        <Footer/>
+        
+          <Home selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+          
+          <AboutUs setSelectedPage={setSelectedPage}/>
+          <Products setSelectedPage={setSelectedPage}/>
+          <ContactUs setSelectedPage={setSelectedPage}/>
+          <Footer/>
+       
       </div>
     </>
   )

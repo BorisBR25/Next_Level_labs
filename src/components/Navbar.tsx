@@ -19,7 +19,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   const flexBetween = "flex items-center justify-between";
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
-  const navbarBackground =isTopOfPage ? "text-black": "bg-black drop-shadow text-white";
+  const navbarBackground =isTopOfPage ? "text-white font-bold": "bg-black drop-shadow text-white";
 
 
   return (
@@ -83,7 +83,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             <div className={`${flexBetween} gap-8 text-sm`}>
               {/* <ActionButton setSelectedPage={setSelectedPage}>Contact Us</ActionButton> */}
               <motion.button
-                className='rounded-md bg-secondary-500 px-10 py-2 text-black hover:bg-zinc-500 hover:text-white'
+                className='rounded-md bg-secondary-500 px-10 py-2 text-white hover:bg-zinc-500 hover:text-white'
                 whileHover={{scale:1.1}}
               >
 
@@ -129,12 +129,15 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                 hidden: {opacity: 0, x:50},
                 visible: {opacity: 1, x: 0}
               }}
+              onClick={() => setIsMenuToggled(!isMenuToggled)}
             >
               <Link 
                   page= "Home" 
                   selectedPage={selectedPage} 
                   setSelectedPage={setSelectedPage}
+          
                 />
+                
             </motion.div>
 
             <motion.div
@@ -142,18 +145,19 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               initial='hidden'
               whileInView='visible'
               viewport={{once:true, amount: 0.5}}
-              transition={{delay:0.2,duration: 1}}
+              transition={{delay:0.4,duration: 1}}
               variants={{
                 hidden: {opacity: 0, x:50},
                 visible: {opacity: 1, x: 0}
               }}
+              onClick={() => setIsMenuToggled(!isMenuToggled)}
             >
               <Link 
-                page= "Consulting"
+                page= "About us" 
                 selectedPage={selectedPage} 
                 setSelectedPage={setSelectedPage}
               />
-            </motion.div>
+            </motion.div> 
               
             <motion.div
               whileHover={{scale:1.1}}
@@ -165,6 +169,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                 hidden: {opacity: 0, x:50},
                 visible: {opacity: 1, x: 0}
               }}
+              onClick={() => setIsMenuToggled(!isMenuToggled)}
             >
               <Link 
                 page= "Products" 
@@ -173,23 +178,27 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               />
             </motion.div>  
              
+           
+
+
             <motion.div
               whileHover={{scale:1.1}}
               initial='hidden'
               whileInView='visible'
               viewport={{once:true, amount: 0.5}}
-              transition={{delay:0.4,duration: 1}}
+              transition={{delay:0.2,duration: 1}}
               variants={{
                 hidden: {opacity: 0, x:50},
                 visible: {opacity: 1, x: 0}
               }}
+              onClick={() => setIsMenuToggled(!isMenuToggled)}
             >
               <Link 
-                page= "About us" 
+                page= "Consulting"
                 selectedPage={selectedPage} 
                 setSelectedPage={setSelectedPage}
               />
-            </motion.div> 
+            </motion.div>
 
              <motion.div
               whileHover={{scale:1.1}}
@@ -201,6 +210,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                 hidden: {opacity: 0, x:50},
                 visible: {opacity: 1, x: 0}
               }}
+              onClick={() => setIsMenuToggled(!isMenuToggled)}
              >
 
               <Link 

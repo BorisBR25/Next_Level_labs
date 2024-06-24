@@ -61,7 +61,7 @@ const Products = ({setSelectedPage}: Props) => {
       </div>
 
     {/* PRODUCTS */}
-    <div className='flex flex-wrap justify-center gap-10 mr-12'>
+    <div className='flex flex-wrap justify-center gap-10 mr-12 px-10'>
       {products.map((product: ProductType) => (
         <div key={product.title} className='w-full md:w-1/4'>
           <ProductCard

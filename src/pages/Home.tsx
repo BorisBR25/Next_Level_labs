@@ -4,9 +4,12 @@ import { SelectedPage } from '../types/types';
 import homeImange from '../assets/images/homeImg.png'
 import footHomeImg from '../assets/images/cannabisCultivation.jpg'
 import homeText from '../assets/images/home-text.png'
+import homeText2 from '../assets/images/home-text2.png'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { motion } from 'framer-motion';
 import Link from '../components/Link';
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import image1 from '../assets/images/backgroundImg.jpg'
 
 
 
@@ -22,8 +25,14 @@ const Home = ({ selectedPage, setSelectedPage }: Props) => {
   return (
     <section
       id='HOME'
-      className='gap-16 bg-white py-10 md:h-full md:pb-0'
+      className='gap-16 bg-cover py-10 md:h-full md:pb-0'
+      style={{
+        backgroundImage:`url(${image1})`,
+        backgroundSize:'cover',
+        backgroundPosition:'center'
+      }}
     >
+
       {/* IMAGE AND HEADER */}
       <motion.div 
         className='md:flex mx-auto w-5/6 items-center justify-center md:h-5/6'
@@ -37,18 +46,20 @@ const Home = ({ selectedPage, setSelectedPage }: Props) => {
             initial='hidden'
             whileInView='visible'
             viewport={{once:true, amount: 0.5}}
-            transition={{duration: 1}}
+            transition={{duration: 2}}
             variants={{
-              hidden: {opacity: 0, x:-50},
+              hidden: {opacity: 0, x:-100},
               visible: {opacity: 1, x: 0}
             }}
             >
             <div className='relative'>
-              <div className='before:absolute before:-top-20 before:-left-10 before:z-[-1] md:before:content-evolvetext'>
-                <img alt= "home-page-text" src={homeText}/>
+              <div>
+                 {/* className='before:absolute before:-top-20 before:-left-10 before:z-[-1] md:before:content-evolvetext'  */}
+                {/* <img className='h-[350px]' alt= "home-page-text" src={homeText2}/> */}
+                <h1 className=' text-white font-extrabold font-montserrat text-center text-8xl border'>NEXT LEVEL LABS.</h1>
               </div>
             </div>
-            <p className='mt-8 text-sm text-black font-bold'>
+            <p className='mt-8 text-lg text-white font-extrabold'>
               Learn How To Safely & Effectively Extract, Refine, & Process Their Own Distillates.
               </p>
           </motion.div>
@@ -79,7 +90,7 @@ const Home = ({ selectedPage, setSelectedPage }: Props) => {
                 />
               </motion.button>
             <AnchorLink
-              className='text-sm font-bold text-black underline hover:text-secondary-500'
+              className='text-sm font-bold text-white underline hover:text-secondary-500'
               onClick={() => setSelectedPage(SelectedPage.AboutUs)}
               href={`${SelectedPage.AboutUs}`}
             >
@@ -90,7 +101,7 @@ const Home = ({ selectedPage, setSelectedPage }: Props) => {
 
 
         {/* IMAGE */}
-        <motion.div 
+        {/* <motion.div 
           className='flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end'
           initial='hidden'
           whileHover={{scale:1.1}}
@@ -103,12 +114,12 @@ const Home = ({ selectedPage, setSelectedPage }: Props) => {
           }}
         >
           <img className='mt-16 rounded-lg h-[500px] w-full' alt='home-image' src={homeImange}/>
-        </motion.div>
+        </motion.div> */}
         
 
       </motion.div>
       {/* SPONSORS */}
-      {isAboveMediumScreens && (
+      {/* {isAboveMediumScreens && (
          <div className='h-[150px] w-full py-10 bg-cover bg-center bg-no-repeat relative opacity-75' style={{backgroundImage: `url(${footHomeImg})`}}>
          <div className='absolute inset-0 opacity-75'></div>
          <div className='mx-auto flex items-center justify-center h-full'>
@@ -117,7 +128,8 @@ const Home = ({ selectedPage, setSelectedPage }: Props) => {
            </div>
          </div>
        </div>
-        )}
+        )}  */}
+      
 
     </section>
   )
