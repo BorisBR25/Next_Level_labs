@@ -6,6 +6,7 @@ import Products from "./pages/Products";
 import ContactUs from "./pages/ContactUs";
 import Footer from "./pages/Footer";
 import { SelectedPage } from "./types/types";
+import Consulting from "./pages/Consulting";
 
 
 
@@ -41,6 +42,7 @@ function App() {
           <Home selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
           
           <AboutUs setSelectedPage={setSelectedPage}/>
+          <Consulting selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
           <Products setSelectedPage={setSelectedPage}/>
           <ContactUs setSelectedPage={setSelectedPage}/>
           <Footer/>

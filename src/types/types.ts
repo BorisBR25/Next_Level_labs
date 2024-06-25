@@ -16,4 +16,5 @@ export interface AboutUsType {
   title: string,
   description?: string,
   image: string,
+  video?: string,
 }

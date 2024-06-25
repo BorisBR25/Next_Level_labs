@@ -75,7 +75,7 @@ const Home = ({ selectedPage, setSelectedPage }: Props) => {
               Contact Us
             </ActionButton> */}
             <motion.button
-                className='rounded-md bg-secondary-500 px-10 py-2 text-black hover:bg-zinc-500 hover:text-white'
+                className='rounded-md bg-secondary-500 px-10 py-2 text-white hover:bg-zinc-500 hover:text-white'
                 whileHover={{scale:1.1}}
               >
 

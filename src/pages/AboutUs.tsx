@@ -2,17 +2,20 @@ import useMediaQuery from '../hooks/useMediaQuery'
 import { SelectedPage } from '../types/types'
 import aboutUsImg from '../assets/images/aboutusImg.jpg'
 import aboutUsImg2 from '../assets/images/aboutusImg2.jpg'
-import footHomeImg from '../assets/images/footHomeImg.jpg'
+import footImg from '../assets/images/leaves-varied-background.jpg'
 import Htext from '../components/Htext'
 import { motion } from 'framer-motion'
 import { AboutUsType } from '../types/types'
 import AboutUsCard from '../components/AboutUsCard'
+import videoLeaf from '../assets/images/videoLeaf.mp4'
+
 
 const aboutUs: Array<AboutUsType> = [
   {
     title: "title1",
     description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel necessitatibus blanditiis adipisci maiores obcaecati provident ea atque dolorem fugiat quo laudantium illum, impedit nulla. Quasi id consectetur ratione voluptate autem.",
-    image: aboutUsImg
+    image: aboutUsImg,
+    video: videoLeaf
   },
   {
     title: "title2",
@@ -47,7 +50,7 @@ const AboutUs = ({setSelectedPage}: Props) => {
   return (
     <section
       id='ABOUTUS'
-      className='mx-auto min-h-full w-full py-40'
+      className='mx-auto min-h-full w-full pt-28 pb-0'
     >
       <motion.div
       className='mb-[250px]'
@@ -95,6 +98,7 @@ const AboutUs = ({setSelectedPage}: Props) => {
                   title={item.title}
                   image={item.image}
                   description={`${item.description}`}
+                  video={`${item.video}`}
 
                 />
               ))}
@@ -105,7 +109,13 @@ const AboutUs = ({setSelectedPage}: Props) => {
       </motion.div>
       
       {isAboveMediumScreens && (
-         <div className='mt-24 h-[150px] w-full py-10 bg-cover bg-center bg-no-repeat relative opacity-75' style={{backgroundImage: `url(${footHomeImg})`}}>
+         <div 
+           className='mt-24 h-[150px] w-full py-10 bg-cover bg-center bg-no-repeat relative opacity-75' 
+           style={{
+            backgroundImage: `url(${footImg})`,
+            backgroundSize:'cover',
+            backgroundPosition:'center'
+            }}>
          <div className='absolute inset-0'></div>
          <div className='mx-auto flex items-center justify-center h-full'>
            <div className='text-white font-dmsans font-extrabold text-center'>
