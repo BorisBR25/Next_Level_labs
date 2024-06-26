@@ -49,7 +49,7 @@ const AboutUs = ({setSelectedPage}: Props) => {
 
   return (
     <section
-      id='ABOUTUS'
+      id='aboutus'
       className='mx-auto min-h-full w-full pt-28 pb-0'
     >
       <motion.div
@@ -68,8 +68,8 @@ const AboutUs = ({setSelectedPage}: Props) => {
             }}
         >
           <div className='text-center mb-8'>
-            <Htext>ABOUT US</Htext>
-            <p className='py-5'>
+            <Htext>ABOUT <span className=' text-amber-500'> US</span></Htext>
+            <p className='py-5 text-black justify-start'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               Vel necessitatibus blanditiis adipisci maiores obcaecati 
               provident ea atque dolorem fugiat quo laudantium illum, 

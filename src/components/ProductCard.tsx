@@ -7,9 +7,10 @@ type Props = {
     title: string,
     description: string,
     setSelectedPage: (value: SelectedPage) => void; 
+    selectedPage: SelectedPage
 }
 
-const ProductCard = ({img, title, description, setSelectedPage}: Props) => {
+const ProductCard = ({img, title, description, selectedPage, setSelectedPage}: Props) => {
   return (
     <motion.div 
     animate={{ x: 50 }}
@@ -26,7 +27,7 @@ const ProductCard = ({img, title, description, setSelectedPage}: Props) => {
             <AnchorLink
               className='text-sm font-bold text-black underline hover:text-secondary-500'
               onClick={() => setSelectedPage(SelectedPage.Contact)}
-              href={`#${SelectedPage.Contact}`}
+              href={`#${selectedPage}`}
             >
               <p>Learn More</p>
             </AnchorLink>

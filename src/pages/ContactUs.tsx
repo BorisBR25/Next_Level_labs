@@ -28,7 +28,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
 
   return (
     <section
-        id='CONTACT' className='mx-auto w-5/6 pt-24 pb-32'
+        id='contact' className='mx-auto w-5/6 pt-24 pb-32'
     >
         <motion.div
             onViewportEnter={() => setSelectedPage(SelectedPage.Contact)}
@@ -48,7 +48,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
               <Htext>
                 <span className=' text-amber-500'>LET US</span> HELP YOU
               </Htext>
-              <p className='my-5'>
+              <p className='my-5 text-black'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Recusandae, explicabo quae! Beatae deleniti nemo 
                 necessitatibus corporis deserunt. Ad asperiores corrupti,
@@ -127,7 +127,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
                     </p>
                   )}
 
-                  <button type='submit' className='mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white hover:bg-zinc-500'>
+                  <button type='submit' className='mt-5 text-white font-bold rounded-lg bg-amber-400 px-20 py-3 transition duration-500 hover:text-amber-400 hover:bg-zinc-500'>
                     SUBMIT
                   </button>
                 

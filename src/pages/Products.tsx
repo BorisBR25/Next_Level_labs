@@ -53,7 +53,7 @@ const Products = ({setSelectedPage}: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
 
   return (
-    <section id='PRODUCTS' className='mx-auto min-h-full w-full pt-28 pb-16'>
+    <section id='products' className='mx-auto min-h-full w-full pt-28 pb-16'>
     <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Products)}>
       {/* HEADER */}
       <div className='text-center mb-8'>
@@ -72,6 +72,7 @@ const Products = ({setSelectedPage}: Props) => {
             img={product.img}
             description={product.description}
             setSelectedPage={setSelectedPage}
+            selectedPage={SelectedPage.Contact}
           />
         </div>
       ))}

@@ -19,7 +19,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   const flexBetween = "flex items-center justify-between";
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
-  const navbarBackground =isTopOfPage ? "text-white font-bold": "bg-black drop-shadow text-white opacity-85";
+  const navbarBackground =isTopOfPage ? "text-white font-bold": "bg-black drop-shadow text-white font-bold opacity-85";
 
 
   return (
@@ -38,7 +38,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
           {/* right side */}
           {isAboveMediumScreens ? (<div className={`${flexBetween} w-full`}>
-            <div className={`${flexBetween} gap-8 text-sm`}>
+            <div className={`${flexBetween} gap-8 text-lg`}>
               <motion.div
                 whileHover={{scale:1.1}}
               >
@@ -80,10 +80,10 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                   />
               </motion.div>
             </div>
-            <div className={`${flexBetween} gap-8 text-sm`}>
+            <div className={`${flexBetween} gap-8 text-lg`}>
               {/* <ActionButton setSelectedPage={setSelectedPage}>Contact Us</ActionButton> */}
               <motion.button
-                className='rounded-md bg-secondary-500 px-10 py-2 text-white hover:bg-zinc-500 hover:text-white'
+                className='rounded-md bg-amber-400 px-10 py-2 text-white hover:bg-zinc-500 hover:text-white'
                 whileHover={{scale:1.1}}
               >
 
@@ -97,7 +97,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
           </div> ) : (
             <motion.button 
-              className="rounded-full bg-secondary-500 p-2"
+              className="rounded-full bg-amber-400 p-2"
               whileHover={{scale: 1.1}}
               onClick={() => setIsMenuToggled(!isMenuToggled)}
             >

@@ -11,14 +11,13 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 }
 
-const Consulting = ({selectedPage, setSelectedPage}: Props) => {
-
+const Consulting = ({setSelectedPage}: Props) => {
 
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
 
   return (
     <section 
-    id='CONSULTING'
+    id='consulting'
     className='gap-16 bg-cover md:h-full pt-16 pb-16 '>
 
     
@@ -58,7 +57,7 @@ const Consulting = ({selectedPage, setSelectedPage}: Props) => {
              visible: {opacity: 1, x: 0}
            }}
           >
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            <p className="py-5 text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
               Non officiis soluta qui labore corrupti atque perspiciatis 
               rerum. Nostrum incidunt possimus, molestiae, eum delectus 
               iste voluptates placeat velit dolore recusandae laboriosam?

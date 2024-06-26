@@ -20,7 +20,7 @@ const Home = ({ selectedPage, setSelectedPage }: Props) => {
 
   return (
     <section
-      id='HOME'
+      id='home'
       className='gap-16 bg-cover py-10 md:h-full md:pb-0'
       style={{
         backgroundImage:`url(${image1})`,
@@ -75,7 +75,7 @@ const Home = ({ selectedPage, setSelectedPage }: Props) => {
               Contact Us
             </ActionButton> */}
             <motion.button
-                className='rounded-md bg-secondary-500 px-10 py-2 text-white hover:bg-zinc-500 hover:text-white'
+                className='rounded-md bg-amber-400 px-10 py-2 text-white font-bold text-lg hover:bg-zinc-500 hover:text-white'
                 whileHover={{scale:1.1}}
               >
 
@@ -86,9 +86,9 @@ const Home = ({ selectedPage, setSelectedPage }: Props) => {
                 />
               </motion.button>
             <AnchorLink
-              className='text-sm font-bold text-white underline hover:text-secondary-500'
+              className='text-lg font-bold text-white underline hover:text-amber-400'
               onClick={() => setSelectedPage(SelectedPage.AboutUs)}
-              href={`${SelectedPage.AboutUs}`}
+              href={`#${SelectedPage.AboutUs}`}
             >
               <p>Learn More</p>
             </AnchorLink>
