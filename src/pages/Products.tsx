@@ -1,46 +1,38 @@
 import Htext from '../components/Htext'
 import ProductCard from '../components/ProductCard'
-import productImg from '../assets/images/footHomeImg.jpg'
+import productImg from '../assets/images/productImg1.png'
 import { ProductType, SelectedPage } from '../types/types'
 import {motion} from 'framer-motion'
-import useMediaQuery from '../hooks/useMediaQuery';
-import footHomeImg from '../assets/images/cannabisCultivation.jpg'
+//import useMediaQuery from '../hooks/useMediaQuery';
 import productImg2 from '../assets/images/productImg2.png'
 import productImg3 from '../assets/images/productImg3.png'
+import productImg5 from '../assets/images/productImg5.png'
 
 
 const products: Array<ProductType> = [
   {
-    title: 'title1',
+    title: 'ROSIN',
     img: productImg,
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quos adipisci totam doloribus accusantium cumque sit placeat necessitatibus accusamus. Sed expedita temporibus blanditiis dolorem, qui corporis esse culpa id natus?',
+    description: 'Rosin is created through a gentle and solvent-free extraction process, using heat and pressure to extract the potent trichomes from the cannabis plant. The result? A sticky, translucent resin packed with cannabinoids, terpenes, and flavonoids that provide an exquisite taste and powerful effects.',
   },
   {
-    title: 'title2',
+    title: 'DISTILLATE',
     img:productImg2,
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quos adipisci totam doloribus accusantium cumque sit placeat necessitatibus accusamus. Sed expedita temporibus blanditiis dolorem, qui corporis esse culpa id natus?'
+    description: 'Next level labs specializes Short path distillation, wiped film distillation, scalable trim processing and much more. From beginning to end, we have your lab needs covered. Contact nextlevellabs to ensure maximum yields and quality every time!'
   },
   {
-    title: 'title3',
+    title: 'BUDS',
     img:productImg3,
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quos adipisci totam doloribus accusantium cumque sit placeat necessitatibus accusamus. Sed expedita temporibus blanditiis dolorem, qui corporis esse culpa id natus?'
+    description: 'We believe in starting with the best. Our distillates are meticulously crafted from premium cannabis buds known for their exceptional quality and potency. Hand-selected for their rich cannabinoid profiles and superior terpene content, these buds ensure that every drop of our distillates delivers a pure, consistent, and unforgettable experience.'
 
   },
   {
-    title: 'title4',
-    img: productImg,
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quos adipisci totam doloribus accusantium cumque sit placeat necessitatibus accusamus. Sed expedita temporibus blanditiis dolorem, qui corporis esse culpa id natus?'
-  },
-  {
-    title: 'title5',
-    img:productImg2,
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quos adipisci totam doloribus accusantium cumque sit placeat necessitatibus accusamus. Sed expedita temporibus blanditiis dolorem, qui corporis esse culpa id natus?'
-  },
-  {
-    title: 'title6',
-    img:productImg3,
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quos adipisci totam doloribus accusantium cumque sit placeat necessitatibus accusamus. Sed expedita temporibus blanditiis dolorem, qui corporis esse culpa id natus?'
-  },
+    title: 'LUCID DABS',
+    img:productImg5,
+    description:'Quick, easy and effective. Lucid Dabs by Next Level Labs is the every day dabbers solution to having the best experience possible. With Luer Lock technology our dab syringes never leak, preserving your product and preventing degradation. '
+  }
+
+
    
 ];
 
@@ -50,10 +42,19 @@ type Props = {
 
 const Products = ({setSelectedPage}: Props) => {
 
-  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
+  //const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
 
   return (
-    <section id='products' className='mx-auto min-h-full w-full pt-28 pb-16'>
+    <section 
+    id='products' 
+    className='mx-auto bg-gradient-to-t from-black min-h-full w-full pt-28 pb-16' 
+    // style={{
+      //backgroundColor:'#D4FF19'
+    //   backgroundImage:`url(${footHomeImg})`,
+    //   backgroundPosition: 'center',
+    //   backgroundSize: 'cover',
+       //}}
+    >
     <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Products)}>
       {/* HEADER */}
       <div className='text-center mb-8'>
@@ -64,7 +65,7 @@ const Products = ({setSelectedPage}: Props) => {
       </div>
 
     {/* PRODUCTS */}
-    <div className='flex flex-wrap justify-center gap-10 mr-12 px-10'>
+    <div className='flex flex-wrap justify-center gap-10 mr-12 pr-11'>
       {products.map((product: ProductType) => (
         <div key={product.title} className='w-full md:w-1/4'>
           <ProductCard
@@ -79,7 +80,7 @@ const Products = ({setSelectedPage}: Props) => {
     </div>
   </motion.div>
 
-  {isAboveMediumScreens && (
+  {/* {isAboveMediumScreens && (
          <div className='mt-5 h-[150px] w-full py-10 bg-cover bg-center bg-no-repeat relative opacity-75' style={{backgroundImage: `url(${footHomeImg})`}}>
          <div className='absolute inset-0'></div>
          <div className='mx-auto flex items-center justify-center h-full'>
@@ -88,7 +89,7 @@ const Products = ({setSelectedPage}: Props) => {
            </div>
          </div>
        </div>
-        )}
+        )} */}
 </section>
   )
 }

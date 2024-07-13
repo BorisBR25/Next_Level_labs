@@ -2,7 +2,7 @@ import { SelectedPage } from '../types/types'
 import { motion } from 'framer-motion'
 import { useForm } from 'react-hook-form'
 import Htext from '../components/Htext';
-import contactImg from '../assets/images/contactImg.jpg'
+import contactImg from '../assets/images/evolveImg.png'
 
 
 type Props = {
@@ -11,7 +11,7 @@ type Props = {
 
 const ContactUs = ({setSelectedPage}: Props) => {
 
-  const inputStyle = `mb-5 w-full rounded-lg bg-slate-800 px-5 py-3 placeholder-white`
+  const inputStyle = `mb-5 w-full rounded-lg bg-gray-600 px-5 py-3 placeholder-white text-white cursor-white`
 
   const {
     register,
@@ -29,6 +29,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
   return (
     <section
         id='contact' className='mx-auto w-5/6 pt-24 pb-32'
+        
     >
         <motion.div
             onViewportEnter={() => setSelectedPage(SelectedPage.Contact)}
@@ -49,10 +50,12 @@ const ContactUs = ({setSelectedPage}: Props) => {
                 <span className=' text-amber-500'>LET US</span> HELP YOU
               </Htext>
               <p className='my-5 text-black'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae, explicabo quae! Beatae deleniti nemo 
-                necessitatibus corporis deserunt. Ad asperiores corrupti,
-                non sunt quia impedit laudantium nam quibusdam aut debitis reiciendis.
+              Welcome to NEXT LEVEL LABS, where innovation meets precision in 
+              cannabis distillation and refinement. Whether you're a 
+              seasoned industry player or just starting out, our team is
+              dedicated to providing cutting-edge solutions tailored to 
+              your needs. Get in touch below and let's unlock the potential
+              of your cannabis products together.
               </p>
 
             </motion.div>
@@ -148,9 +151,9 @@ const ContactUs = ({setSelectedPage}: Props) => {
                    visible: {opacity: 1, y: 0}
                  }}
               >
-                <div className='md:before:content-evolvetext w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] '>
+                <div >
                   <img 
-                    className='w-[400px] h-[400px] rounded-2xl'
+                    className='w-full h-[400px] rounded-2xl'
                     alt='contact-us-page-graphic'
                     src={contactImg}
                   />

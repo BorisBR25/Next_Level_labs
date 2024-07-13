@@ -7,7 +7,7 @@ type Props = {
 const VideoPlayer = ({videoUrl}: Props) => {
   return (
     <div className="relative">
-      <video className="w-[500px] h-[500px] rounded-lg shadow-md" controls>
+      <video className="w-full h-auto object-cover  rounded-lg border-black shadow-2xl" controls>
         <source src={videoUrl} type="video/mp4" />
         Your browser does not support the video tag.
       </video>

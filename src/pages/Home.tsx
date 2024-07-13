@@ -21,11 +21,12 @@ const Home = ({ selectedPage, setSelectedPage }: Props) => {
   return (
     <section
       id='home'
-      className='gap-16 bg-cover py-10 md:h-full md:pb-0'
+      className='gap-16 py-10 md:h-full md:pb-0'
       style={{
         backgroundImage:`url(${image1})`,
         backgroundSize:'cover',
-        backgroundPosition:'center'
+        backgroundPosition:'center',
+        
       }}
     >
 
@@ -55,7 +56,7 @@ const Home = ({ selectedPage, setSelectedPage }: Props) => {
                 <h1 className=' text-white font-extrabold font-montserrat text-center text-8xl border'>NEXT LEVEL LABS.</h1>
               </div>
             </div>
-            <p className='mt-8 text-lg text-white font-extrabold'>
+            <p className='mt-8 text-2xl text-white font-extrabold'>
               Learn How To Safely & Effectively Extract, Refine, & Process Their Own Distillates.
               </p>
           </motion.div>
@@ -75,7 +76,7 @@ const Home = ({ selectedPage, setSelectedPage }: Props) => {
               Contact Us
             </ActionButton> */}
             <motion.button
-                className='rounded-md bg-amber-400 px-10 py-2 text-white font-bold text-lg hover:bg-zinc-500 hover:text-white'
+                className='rounded-md bg-amber-400 px-10 py-2 text-xl text-white font-bold text-lg hover:bg-zinc-500 hover:text-white'
                 whileHover={{scale:1.1}}
               >
 
@@ -86,7 +87,7 @@ const Home = ({ selectedPage, setSelectedPage }: Props) => {
                 />
               </motion.button>
             <AnchorLink
-              className='text-lg font-bold text-white underline hover:text-amber-400'
+              className='text-2xl font-bold text-white underline hover:text-amber-400'
               onClick={() => setSelectedPage(SelectedPage.AboutUs)}
               href={`#${SelectedPage.AboutUs}`}
             >

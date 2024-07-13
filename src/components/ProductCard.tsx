@@ -14,16 +14,15 @@ const ProductCard = ({img, title, description, selectedPage, setSelectedPage}: P
   return (
     <motion.div 
     animate={{ x: 50 }}
-    className='mt-5 rounded-lg border-2 border-gray-100 px-5 py-6 items-center hover:shadow-2xl hover:opacity-75'
+    className='bg-white mt-5 rounded-lg border-2 border-gray-100 px-5 py-6 items-center hover:shadow-2xl hover:opacity-75 flex flex-col justify-between'
     whileHover={{scale:1.1}}
     >
         <div className='mb-4 flex flex-wrap justify-center'>
-            <div className='  overflow-hidden w-full h-auto'>
-              <img className='rounded-lg w-full h-auto' src={`${img}`}
-              />
+            <div className='  overflow-hidden w-full h-[250px] md:h-[400px]'>
+              <img className='rounded-lg w-full h-full' style={{backgroundImage: `url(${img})`, backgroundPosition: 'center', backgroundSize:'cover'}}/>
             </div>
-            <h4 className='font-bold'>{title}</h4>
-            <p className='my-3'>{description}</p>
+            <h4 className='font-bold pt-5'>{title}</h4>
+            <p className='my-3 h-auto sm:h-48'>{description}</p>
             <AnchorLink
               className='text-sm font-bold text-black underline hover:text-secondary-500'
               onClick={() => setSelectedPage(SelectedPage.Contact)}
