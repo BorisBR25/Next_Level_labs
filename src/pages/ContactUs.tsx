@@ -29,6 +29,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
   return (
     <section
         id='contact' className='mx-auto w-5/6 pt-24 pb-32'
+        style={{backgroundImage: `url(${contactImg})`, backgroundPosition:'center'}}
         
     >
         <motion.div
@@ -49,7 +50,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
               <Htext>
                 <span className=' text-amber-500'>LET US</span> HELP YOU
               </Htext>
-              <p className='my-5 text-black'>
+              <p className='my-5 text-black font-bold text-lg'>
               Welcome to NEXT LEVEL LABS, where innovation meets precision in 
               cannabis distillation and refinement. Whether you're a 
               seasoned industry player or just starting out, our team is
@@ -140,7 +141,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
 
               </motion.div>
 
-              <motion.div
+              {/* <motion.div
                 className='relative mt-16 basis-2/5 md:mt-0'
                 initial='hidden'
                  whileInView='visible'
@@ -159,7 +160,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
                   />
                 </div>
 
-              </motion.div>
+              </motion.div> */}
 
             </div>
 

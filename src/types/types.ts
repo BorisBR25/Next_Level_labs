@@ -1,15 +1,16 @@
 export enum SelectedPage {
     Home = "home",
     Consuting = "consulting",
-    Products = "products",
+    Services = "services",
     AboutUs = "aboutus",
     Contact = "contact", 
   }
 
 export interface ProductType {
   title: string,
-  img: string
-  description: string
+  video?: string,
+  img?: string,
+  description: string,
 }
 
 export interface AboutUsType {

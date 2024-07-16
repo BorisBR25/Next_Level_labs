@@ -74,7 +74,7 @@ const Navbar = ({ variant, isNavbarTransparent, isTopOfPage, selectedPage, setSe
               >
 
                 <Linkpage 
-                  page= "Products" 
+                  page= "Services" 
                   selectedPage={selectedPage} 
                   setSelectedPage={setSelectedPage}
                 />
@@ -189,7 +189,7 @@ const Navbar = ({ variant, isNavbarTransparent, isTopOfPage, selectedPage, setSe
               onClick={() => setIsMenuToggled(!isMenuToggled)}
             >
               <Linkpage 
-                page= "Products" 
+                page= "Services" 
                 selectedPage={selectedPage} 
                 setSelectedPage={setSelectedPage}
               />
@@ -289,7 +289,7 @@ const Navbar = ({ variant, isNavbarTransparent, isTopOfPage, selectedPage, setSe
                 <Link
                   to={"/"}
                 >
-                  Products
+                  Services
                 
                 </Link>
               </motion.div>
@@ -304,11 +304,11 @@ const Navbar = ({ variant, isNavbarTransparent, isTopOfPage, selectedPage, setSe
                 whileHover={{scale:1.1}}
               >
 
-                <Linkpage
-                  page="Contact"
-                  selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
-                />
+                <Link
+                to={"/"}
+                >
+                  Contact
+                </Link>
               </motion.button>
             </div>  
 
