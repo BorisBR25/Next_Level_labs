@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "next-level-labs",
+    "hosting-nextlevellabs": "nextlevellbas"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
