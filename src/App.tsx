@@ -66,7 +66,10 @@ function App() {
               <AboutUs setSelectedPage={setSelectedPage}/>
               <Products setSelectedPage={setSelectedPage}/>
               <ContactUs setSelectedPage={setSelectedPage}/>
-              <Footer/>
+              <Footer
+              selectedPage={selectedPage} 
+              setSelectedPage={setSelectedPage}
+              />
               </>
             }/>
           

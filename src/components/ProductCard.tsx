@@ -15,7 +15,7 @@ const ProductCard = ({video, img, title, description, selectedPage, setSelectedP
   return (
     <motion.div 
     animate={{ x: 50 }}
-    className='bg-white mt-5 rounded-lg border-2 border-gray-100 px-5 py-6 items-center hover:shadow-2xl hover:opacity-75 flex flex-col justify-between'
+    className='bg-white mt-5 rounded-lg border-2 border-gray-100 px-5 py-6 items-center hover:shadow-2xl flex flex-col justify-between'
     whileHover={{scale:1.1}}
   >
     <div className='mb-4 flex flex-wrap justify-center'>
@@ -35,7 +35,7 @@ const ProductCard = ({video, img, title, description, selectedPage, setSelectedP
       <h4 className='font-bold pt-5'>{title}</h4>
       <p className='my-3 h-auto sm:h-40'>{description}</p>
       <AnchorLink
-        className='text-sm font-bold text-black underline hover:text-secondary-500'
+        className='text-xl font-bold text-amber-400 underline hover:text-black'
         onClick={() => setSelectedPage(SelectedPage.Contact)}
         href={`#${selectedPage}`}
       >

@@ -40,7 +40,7 @@ const Navbar = ({ variant, isNavbarTransparent, isTopOfPage, selectedPage, setSe
           {/* left side */}
           <motion.div 
             className={`${flexBetween} w-full gap-16`}
-            whileHover={{scale: 1.1}}
+            //whileHover={{scale: 1.1}}
             style={{ x: 0 }}
           >
             <img className= "w-50 h-20" alt="logo" src={Logo}/>
@@ -252,7 +252,7 @@ const Navbar = ({ variant, isNavbarTransparent, isTopOfPage, selectedPage, setSe
           {/* left side */}
           <motion.div 
             className={`${flexBetween} w-full gap-16`}
-            whileHover={{scale: 1.1}}
+            //whileHover={{scale: 1.1}}
             style={{ x: 0 }}
           >
             <img className= "w-50 h-20" alt="logo" src={Logo}/>
@@ -399,7 +399,7 @@ const Navbar = ({ variant, isNavbarTransparent, isTopOfPage, selectedPage, setSe
               <Link
                 to={"/"}
               >
-                Products
+                Services
               </Link>
           
                 

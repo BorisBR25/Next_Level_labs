@@ -5,10 +5,17 @@ import {
   EnvelopeIcon
 } from "@heroicons/react/24/solid";
 import instagramLogo from "../assets/images/instagram.png"
+import Linkpage from "../components/Link";
+import { SelectedPage } from "../types/types";
+import { Link } from "react-router-dom";
 
-//type Props = {}
 
-const Footer = () => {
+type Props = {
+  selectedPage: SelectedPage;
+  setSelectedPage: (value: SelectedPage) => void;
+}
+
+const Footer = ({selectedPage, setSelectedPage }: Props) => {
   return (
     <footer className="bg-black py-16">
   <div className="mx-auto w-5/6 gap-16 md:flex md:justify-between text-white">
@@ -23,13 +30,54 @@ const Footer = () => {
       <p>© Next Level Labs All Rights Reserved</p>
     </div>
 
-    <div className="mt-16 md:w-1/4">
-      <h4 className="font-bold">Links</h4>
-      <p className="my-5">Home</p>
-      <p className="my-5">About Us</p>
-      <p className="my-5">Products</p>
-      <p className="my-5">Consulting</p>
-      <p className="my-5">Contact Us</p>
+    <div className="mt-16 md:w-1/4 flex flex-col">
+      <h4 className="font-bold mb-5">Links</h4>
+      <div className="mb-2">
+        <Linkpage
+        
+        page="Home"
+        selectedPage={selectedPage} 
+        setSelectedPage={setSelectedPage}
+        >
+        </Linkpage>
+      </div>
+      <div className="mb-2">
+        <Linkpage
+        page="About us"
+        selectedPage={selectedPage} 
+        setSelectedPage={setSelectedPage}
+        >
+        </Linkpage>
+      </div>
+      <div className="mb-2">
+        <Linkpage
+        page="Services"
+        selectedPage={selectedPage} 
+        setSelectedPage={setSelectedPage}
+        >
+        </Linkpage>
+      </div>
+      <div className="mb-2 hover:text-amber-400">
+        <Link
+        to="/consulting"
+        >
+          Consulting
+        </Link>
+      </div>
+      <div>
+        <Linkpage
+        page="Contact"
+        selectedPage={selectedPage} 
+        setSelectedPage={setSelectedPage}
+        >
+        </Linkpage>
+      </div>
+
+      
+      
+     
+    
+      
     </div>
 
     <div className="mt-16 md:w-1/4">
