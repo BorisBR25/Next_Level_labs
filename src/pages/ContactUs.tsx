@@ -48,7 +48,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
                  }}
             >
               <Htext>
-                <span className=' text-amber-500'>LET US</span> HELP YOU
+                <span className=' text-[#FF7F50]'>LET US</span> HELP YOU
               </Htext>
               <p className='my-5 text-black font-bold text-lg'>
               Welcome to NEXT LEVEL LABS, where innovation meets precision in 
@@ -76,7 +76,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
                 <form
                   target='_blank'
                   onSubmit={onSubmit}
-                  action='https://formsubmit.co/your@email.com '
+                  action='https://formsubmit.co/info@thenextlevellabs.com'
                   method='POST'
                 >
                   {errors.name &&(
@@ -132,7 +132,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
                   />
                   
 
-                  <button type='submit' className='mt-5 text-white font-bold rounded-lg bg-amber-400 px-20 py-3 transition duration-500 hover:text-amber-400 hover:bg-zinc-500'>
+                  <button type='submit' className='mt-5 text-white font-bold rounded-lg bg-[#FF7F50] px-20 py-3 transition duration-500 hover:text-[#FF7F50] hover:bg-[#008080]'>
                     SUBMIT
                   </button>
                 

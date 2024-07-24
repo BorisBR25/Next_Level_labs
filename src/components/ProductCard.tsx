@@ -35,7 +35,7 @@ const ProductCard = ({video, img, title, description, selectedPage, setSelectedP
       <h4 className='font-bold pt-5'>{title}</h4>
       <p className='my-3 h-auto sm:h-40'>{description}</p>
       <AnchorLink
-        className='text-xl font-bold text-amber-400 underline hover:text-black'
+        className='text-xl font-bold text-[#FF7F50] underline hover:text-[#008080]'
         onClick={() => setSelectedPage(SelectedPage.Contact)}
         href={`#${selectedPage}`}
       >

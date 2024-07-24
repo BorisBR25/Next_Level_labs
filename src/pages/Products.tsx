@@ -66,7 +66,7 @@ const Products = ({setSelectedPage}: Props) => {
       <div className='text-center mb-8'>
         <Htext>
           OUR 
-          <span className=' text-amber-500'> SERVICES</span>
+          <span className=' text-[#FF7F50]'> SERVICES</span>
           </Htext>
       </div>
 

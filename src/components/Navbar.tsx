@@ -7,7 +7,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 //import ActionButton from "./ActionButton";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import Instagram from "../assets/logo/InstagramLogo";
 
 
 
@@ -24,7 +24,7 @@ const Navbar = ({ variant, isNavbarTransparent, isTopOfPage, selectedPage, setSe
   const flexBetween = "flex items-center justify-between";
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
-  const navbarBackground = isTopOfPage ? "text-white font-bold" : "bg-black drop-shadow text-white font-bold opacity-85";
+  const navbarBackground = isTopOfPage ? "text-white font-bold" : "bg-[#008080] drop-shadow text-white font-bold opacity-85";
   const navbarClasses = `${isNavbarTransparent && !isTopOfPage ? "opacity-0" : navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6`;
   
 
@@ -100,7 +100,7 @@ const Navbar = ({ variant, isNavbarTransparent, isTopOfPage, selectedPage, setSe
             <div className={`${flexBetween} gap-8 text-lg`}>
               {/* <ActionButton setSelectedPage={setSelectedPage}>Contact Us</ActionButton> */}
               <motion.button
-                className='rounded-md bg-amber-400 px-10 py-2 text-xl text-white hover:bg-zinc-500 hover:text-white'
+                className='rounded-md bg-[#FF7F50] px-10 py-2 text-xl text-white hover:bg-white hover:text-[#FF7F50]'
                 whileHover={{scale:1.1}}
               >
 
@@ -114,7 +114,7 @@ const Navbar = ({ variant, isNavbarTransparent, isTopOfPage, selectedPage, setSe
 
           </div> ) : (
             <motion.button 
-              className="rounded-full bg-amber-400 p-2"
+              className="rounded-full bg-[#FF7F50] p-2"
               whileHover={{scale: 1.1}}
               onClick={() => setIsMenuToggled(!isMenuToggled)}
             >
@@ -239,6 +239,22 @@ const Navbar = ({ variant, isNavbarTransparent, isTopOfPage, selectedPage, setSe
                 setSelectedPage={setSelectedPage}
               />
              </motion.div>
+             <motion.div
+              whileHover={{scale:1.1}}
+              initial='hidden'
+              whileInView='visible'
+              viewport={{once:true, amount: 0.5}}
+              transition={{delay:0.2,duration: 1}}
+              variants={{
+                hidden: {opacity: 0, x:50},
+                visible: {opacity: 1, x: 0}
+              }}
+              onClick={() => setIsMenuToggled(!isMenuToggled)}
+             >
+              <Instagram
+              href="https://www.instagram.com/nextlevellabs/"
+              />
+             </motion.div>
             </div>
         </div>
       )}
@@ -262,7 +278,7 @@ const Navbar = ({ variant, isNavbarTransparent, isTopOfPage, selectedPage, setSe
           {isAboveMediumScreens ? (<div className={`${flexBetween} w-full`}>
             <div className={`${flexBetween} gap-8 text-2xl `}>
               <motion.div
-                whileHover={{scale:1.1}}
+                whileHover={{scale:1.1, color: "#FF7F50"}}
               >
                 <Link
                   to={"/"}
@@ -273,7 +289,7 @@ const Navbar = ({ variant, isNavbarTransparent, isTopOfPage, selectedPage, setSe
               </motion.div>
 
               <motion.div
-                whileHover={{scale:1.1}}
+                whileHover={{scale:1.1, color: "#FF7F50"}}
               >
                 <Link
                   to={"/"}
@@ -284,7 +300,7 @@ const Navbar = ({ variant, isNavbarTransparent, isTopOfPage, selectedPage, setSe
               </motion.div>
 
               <motion.div
-                whileHover={{scale:1.1}}
+                whileHover={{scale:1.1, color: "#FF7F50"}}
               >
                 <Link
                   to={"/"}
@@ -300,7 +316,7 @@ const Navbar = ({ variant, isNavbarTransparent, isTopOfPage, selectedPage, setSe
             <div className={`${flexBetween} gap-8 text-lg`}>
               {/* <ActionButton setSelectedPage={setSelectedPage}>Contact Us</ActionButton> */}
               <motion.button
-                className='rounded-md bg-amber-400 px-10 py-2 text-xl text-white hover:bg-zinc-500 hover:text-white'
+                className='rounded-md bg-[#FF7F50] px-10 py-2 text-xl text-white hover:bg-white hover:text-[#008080]'
                 whileHover={{scale:1.1}}
               >
 
@@ -314,7 +330,7 @@ const Navbar = ({ variant, isNavbarTransparent, isTopOfPage, selectedPage, setSe
 
           </div> ) : (
             <motion.button 
-              className="rounded-full bg-amber-400 p-2"
+              className="rounded-full bg-[#FF7F50] p-2"
               whileHover={{scale: 1.1}}
               onClick={() => setIsMenuToggled(!isMenuToggled)}
             >
@@ -335,7 +351,7 @@ const Navbar = ({ variant, isNavbarTransparent, isTopOfPage, selectedPage, setSe
           </div>
           <div className={"ml-[33%] flex flex-col gap-10 text-2xl"}>
             <motion.div
-              whileHover={{scale:1.2, speed:10
+              whileHover={{scale:1.2, speed:10, color: "#FF7F50"
                 
               }}
               initial='hidden'
@@ -359,9 +375,7 @@ const Navbar = ({ variant, isNavbarTransparent, isTopOfPage, selectedPage, setSe
             </motion.div>
 
             <motion.div
-              whileHover={{scale:1.2, speed:10
-                
-              }}
+              whileHover={{scale:1.2, speed:10, color: "#FF7F50"}}
               initial='hidden'
               whileInView='visible'
               viewport={{once:true, amount: 0.5}}
@@ -383,9 +397,7 @@ const Navbar = ({ variant, isNavbarTransparent, isTopOfPage, selectedPage, setSe
             </motion.div>
 
             <motion.div
-              whileHover={{scale:1.2, speed:10
-                
-              }}
+              whileHover={{scale:1.2, speed:10, color: "#FF7F50"}}
               initial='hidden'
               whileInView='visible'
               viewport={{once:true, amount: 0.5}}
@@ -407,9 +419,7 @@ const Navbar = ({ variant, isNavbarTransparent, isTopOfPage, selectedPage, setSe
             </motion.div>
 
             <motion.div
-              whileHover={{scale:1.2, speed:10
-                
-              }}
+              whileHover={{scale:1.2, speed:10, color: "#FF7F50"}}
               initial='hidden'
               whileInView='visible'
               viewport={{once:true, amount: 0.5}}
@@ -425,10 +435,24 @@ const Navbar = ({ variant, isNavbarTransparent, isTopOfPage, selectedPage, setSe
               >
                Contact
               </Link>
-          
-                
-                
             </motion.div>
+
+            <motion.div
+              whileHover={{scale:1.1}}
+              initial='hidden'
+              whileInView='visible'
+              viewport={{once:true, amount: 0.5}}
+              transition={{delay:0.2,duration: 1}}
+              variants={{
+                hidden: {opacity: 0, x:50},
+                visible: {opacity: 1, x: 0}
+              }}
+              onClick={() => setIsMenuToggled(!isMenuToggled)}
+             >
+              <Instagram
+              href="https://www.instagram.com/nextlevellabs/"
+              />
+             </motion.div>
 
          
             </div>

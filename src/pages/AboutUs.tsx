@@ -39,20 +39,20 @@ const AboutUs = ({setSelectedPage}: Props) => {
   };
 
   return (
-    <section id='aboutus' className='mx-auto min-h-full bg-green-950 w-full pt-28 pb-0'>
+    <section id='aboutus' className='mx-auto min-h-full bg-[#008080] w-full pt-28 pb-0'>
       <motion.div 
       className='mx-auto w-full max-w-6xl px-4'
       onViewportEnter={() => setSelectedPage(SelectedPage.AboutUs)}
       >
         <div className='text-center mb-14'>
-          <Htext>ABOUT <span className='text-amber-400 font-extrabold'>US</span></Htext>
+          <Htext>ABOUT <span className='text-[#FF7F50] font-bold'>US</span></Htext>
         </div>
         
 
 
       
           <div className='mb-8 text-center'>
-            <h2 className='text-3xl text-amber-400 font-semibold mb-2'>Next Level Labs: Pioneers in Cannabis Extraction and Consulting</h2>
+            <h2 className='text-3xl text-[#FF7F50] font-semibold mb-2'>Next Level Labs: Pioneers in Cannabis Extraction and Consulting</h2>
             <p className='text-white text-xl'>
               With over 14 years of dedicated service in the cannabis industry, Next Level Labs stands at the forefront
               of cannabis extraction and consulting. Based in California, our company has built a legacy of excellence,
@@ -97,7 +97,7 @@ const AboutUs = ({setSelectedPage}: Props) => {
         <div className='py-10 text-black text-lg leading-relaxed'>
 
           <div className='mb-8'>
-            <h3 className='text-2xl text-amber-400 font-semibold mb-2'>Our Story</h3>
+            <h3 className='text-2xl text-[#FF7F50] font-semibold mb-2'>Our Story</h3>
             <p className='text-white text-xl'>
               Founded over a decade ago, Next Level Labs emerged from a passion for cannabis and a vision to
               revolutionize the industry. From humble beginnings, we have grown into a leading name in cannabis
@@ -107,7 +107,7 @@ const AboutUs = ({setSelectedPage}: Props) => {
           </div>
 
           <div className='mb-8'>
-            <h3 className='text-2xl text-amber-400 font-semibold mb-2'>Our Expertise</h3>
+            <h3 className='text-2xl text-[#FF7F50] font-semibold mb-2'>Our Expertise</h3>
             <p className='text-white text-xl'>
               Our team is the backbone of Next Level Labs, bringing together a wealth of knowledge and experience.
               With a combined 38 years of expertise in cannabis extraction, growing, manufacturing, fulfillment,
@@ -118,7 +118,7 @@ const AboutUs = ({setSelectedPage}: Props) => {
           </div>
 
           <div className='mb-8'>
-            <h3 className='text-2xl text-amber-400 font-semibold mb-2'>Our Mission</h3>
+            <h3 className='text-2xl text-[#FF7F50] font-semibold mb-2'>Our Mission</h3>
             <p className='text-white text-xl'>
               At Next Level Labs, our mission is clear: to elevate the standards of cannabis extraction and
               consulting. We are committed to providing our clients with top-tier products and unparalleled consulting
@@ -128,7 +128,7 @@ const AboutUs = ({setSelectedPage}: Props) => {
           </div>
 
           <div className='mb-8'>
-            <h3 className='text-2xl text-amber-400 font-semibold mb-2'>Values and Principles</h3>
+            <h3 className='text-2xl text-[#FF7F50] font-semibold mb-2'>Values and Principles</h3>
             <ul className='list-disc pl-5 text-white text-xl'>
               <li>
                 <strong>Innovation:</strong> We continually invest in research and development to stay ahead of
@@ -150,7 +150,7 @@ const AboutUs = ({setSelectedPage}: Props) => {
           </div>
 
           <div className='mb-8'>
-            <h3 className='text-2xl text-amber-400 font-semibold mb-2'>Our Team</h3>
+            <h3 className='text-2xl text-[#FF7F50] font-semibold mb-2'>Our Team</h3>
             <p className='text-white text-xl'>
               Our team is composed of passionate experts who live and breathe cannabis. From our master growers to our
               extraction technicians and innovative designers, each member brings unique skills and insights to the
@@ -160,7 +160,7 @@ const AboutUs = ({setSelectedPage}: Props) => {
           </div>
 
           <div>
-            <h3 className='text-2xl text-amber-400 font-semibold mb-2'>Why Choose Next Level Labs?</h3>
+            <h3 className='text-2xl text-[#FF7F50] font-semibold mb-2'>Why Choose Next Level Labs?</h3>
             <p className='text-white text-xl'>
               Choosing Next Level Labs means partnering with a team that is dedicated to your success. We understand
               the complexities of the cannabis industry and are here to guide you through every step of the process.
