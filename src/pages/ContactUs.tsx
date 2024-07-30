@@ -2,7 +2,7 @@ import { SelectedPage } from '../types/types'
 import { motion } from 'framer-motion'
 import { useForm } from 'react-hook-form'
 import Htext from '../components/Htext';
-import contactImg from '../assets/images/evolveImg.png'
+//import contactImg from '../assets/images/evolveImg.png'
 
 
 type Props = {
@@ -29,7 +29,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
   return (
     <section
         id='contact' className='mx-auto w-5/6 pt-24 pb-32'
-        style={{backgroundImage: `url(${contactImg})`, backgroundPosition:'center'}}
+        //style={{backgroundImage: `url(${contactImg})`, backgroundPosition:'center'}}
         
     >
         <motion.div

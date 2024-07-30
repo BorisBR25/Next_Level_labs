@@ -72,7 +72,7 @@ const AboutUs = ({setSelectedPage}: Props) => {
                       transform: `translateX(${currentIndex * -100}%)`,
                     }}
                   >
-                    <img src={item} alt={`About Us ${index}`} className='object-cover w-full h-full rounded-lg' />
+                    <img src={item} alt='Cannabis extraction, refine, distillates' className='object-cover w-full h-full rounded-lg' />
                   </li>
                 ))}
               </ul>

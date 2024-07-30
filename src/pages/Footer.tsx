@@ -1,6 +1,5 @@
 import Logo from "../assets/images/logo.png"
 import {
-  MapPinIcon,
   PhoneIcon,
   EnvelopeIcon
 } from "@heroicons/react/24/solid";
@@ -63,7 +62,7 @@ const Footer = ({selectedPage, setSelectedPage }: Props) => {
             >
             </Linkpage>
           </div>
-          <div className="mb-2 hover:text-amber-400">
+          <div className="mb-2 hover:text-[#FF7F50]">
             <Link
             to="/consulting"
             >
@@ -89,7 +88,7 @@ const Footer = ({selectedPage, setSelectedPage }: Props) => {
       </div>
       <div className="flex mt-5">
         <EnvelopeIcon className="h-8 pr-5"></EnvelopeIcon>
-        <p>info@nextlevellabs.com</p>
+        <p>info@thenextlevellabs.com</p>
       </div>
     </div>
 
@@ -125,7 +124,7 @@ const Footer = ({selectedPage, setSelectedPage }: Props) => {
 
           <div className="mt-16 md:w-1/4 flex flex-col">
             <h4 className="font-bold mb-5">Links</h4>
-            <div className="mb-2 hover:text-amber-400">
+            <div className="mb-2 hover:text-[#FF7F50]">
               <Link
                 to="/"
                 >
@@ -133,21 +132,21 @@ const Footer = ({selectedPage, setSelectedPage }: Props) => {
                 </Link>
             </div>
            
-            <div className="mb-2 hover:text-amber-400">
+            <div className="mb-2 hover:text-[#FF7F50]">
               <Link
                 to="/"
                 >
                   About us
                 </Link>
             </div>
-            <div className="mb-2 hover:text-amber-400">
+            <div className="mb-2 hover:text-[#FF7F50]">
               <Link
               to="/"
               >
                 Services
               </Link>
             </div>
-            <div hover:text-amber-400>
+            <div className="hover:text-[#FF7F50]">
               <Link
                 to="/"
                 >
@@ -159,21 +158,21 @@ const Footer = ({selectedPage, setSelectedPage }: Props) => {
 
           <div className="mt-16 md:w-1/4">
             <h4 className="font-bold">Contact Details</h4>
-            <div className="flex mt-5">
+            {/* <div className="flex mt-5">
               <MapPinIcon className="h-16 pr-5"></MapPinIcon>
               <p className="">
                 NEXT LEVEL LABORATORIES
                 123 Building Name, Area Name
                 street, city, country-zipcode
                 </p>
-            </div>
+            </div> */}
             <div className="flex mt-5">
               <PhoneIcon className="h-8 pr-5"></PhoneIcon>
               <p>+1 949-734-0648</p>
             </div>
             <div className="flex mt-5">
               <EnvelopeIcon className="h-8 pr-5"></EnvelopeIcon>
-              <p>info@nextlevellabs.com</p>
+              <p>info@thenextlevellabs.com</p>
             </div>
           </div>
 

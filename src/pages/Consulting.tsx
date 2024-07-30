@@ -59,7 +59,7 @@ const Consulting = () => {
       <div className="bg-[#10b4b4]  py-20">
       <div className="container mx-auto px-4">
         <div className="text-center">
-          <h2 className="text-4xl font-bold text-[#fd6128] mb-6">
+          <h2 className="text-4xl font-bold text-[#FF7F50] mb-6">
             Elevate Your Cannabis Operations with Next Level Labs
           </h2>
           <p className="text-xl text-white mb-12">
@@ -143,7 +143,7 @@ const Consulting = () => {
 
         {/* Call to Action */}
         <div className="text-center py-16">
-          <h3 className="text-3xl font-bold text-[#fd6128] mb-2">Why Choose Next Level Labs?</h3>
+          <h3 className="text-3xl font-bold text-[#FF7F50] mb-2">Why Choose Next Level Labs?</h3>
           <p className="text-xl text-white mb-8">
             <span className="font-extrabold text-2xl">Industry Expertise: </span>
              Benefit from our extensive experience and deep understanding of the cannabis industry.
