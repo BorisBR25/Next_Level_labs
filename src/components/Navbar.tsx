@@ -86,7 +86,7 @@ const Navbar = ({ variant, isNavbarTransparent, isTopOfPage, selectedPage, setSe
                 
                 <Link
                 to="/consulting"
-                className="text-white hover:text-amber-400"
+                className="text-white hover:text-[#FF7F50]"
                 
                 >
                   Consulting

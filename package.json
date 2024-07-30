@@ -68,7 +68,7 @@
 
     "eslint-plugin-react-refresh": "^0.4.6",
 
-    "firebase-tools": "^13.13.3",
+    "firebase-tools": "^13.14.2",
 
     "postcss": "^8.4.38",
 
