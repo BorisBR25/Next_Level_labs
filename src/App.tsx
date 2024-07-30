@@ -48,48 +48,52 @@ function App() {
   return (
     <>
       
-      <div className='app bg-white'>
       
           <BrowserRouter>
-          <Routes>
-            <Route path="/" element={
-              <>
-              <Navbar
-                isTopOfPage={isTopOfPage}
-                selectedPage={selectedPage} 
-                setSelectedPage={setSelectedPage}
-                isNavbarTransparent={isNavbarTransparent}
-                variant="default"
-                />
-              
-              <Home selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-              <AboutUs setSelectedPage={setSelectedPage}/>
-              <Products setSelectedPage={setSelectedPage}/>
-              <ContactUs setSelectedPage={setSelectedPage}/>
-              <Footer/>
-              </>
-            }/>
-          
-          
-          
-          {/*<Consulting selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>*/}
-          
-            <Route path="/consulting" element={
-              <>
-               <Navbar
-                isTopOfPage={isTopOfPage}
-                selectedPage={selectedPage} 
-                setSelectedPage={setSelectedPage}
-                isNavbarTransparent={isNavbarTransparent}
-                variant="consulting"
-                />
-                <Consulting/>
-              </>
+              <div>
+              <Routes>
+                <Route path="/" element={
+                  <>
+                  <Navbar
+                    isTopOfPage={isTopOfPage}
+                    selectedPage={selectedPage} 
+                    setSelectedPage={setSelectedPage}
+                    isNavbarTransparent={isNavbarTransparent}
+                    variant="default"
+                    />
+                  
+                  <Home selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+                  <AboutUs setSelectedPage={setSelectedPage}/>
+                  <Products setSelectedPage={setSelectedPage}/>
+                  <ContactUs setSelectedPage={setSelectedPage}/>
+                  
+                  </>
                 }/>
-          </Routes>
-       
+              
+              
+              
+              {/*<Consulting selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>*/}
+              
+                <Route path="/consulting" element={
+                  <>
+                  <Navbar
+                    isTopOfPage={isTopOfPage}
+                    selectedPage={selectedPage} 
+                    setSelectedPage={setSelectedPage}
+                    isNavbarTransparent={isNavbarTransparent}
+                    variant="consulting"
+                    />
+                    <Consulting/>
+                  </>
+                    }/>
+              </Routes>
+              <Footer
+                  selectedPage={selectedPage} 
+                  setSelectedPage={setSelectedPage}
+                  />
+          
+            </div>
           </BrowserRouter>
-      </div>
     </>
   )
 }

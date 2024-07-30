@@ -48,7 +48,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
                  }}
             >
               <Htext>
-                <span className=' text-amber-500'>LET US</span> HELP YOU
+                <span className=' text-[#FF7F50]'>LET US</span> HELP YOU
               </Htext>
               <p className='my-5 text-black font-bold text-lg'>
               Welcome to NEXT LEVEL LABS, where innovation meets precision in 
@@ -76,9 +76,16 @@ const ContactUs = ({setSelectedPage}: Props) => {
                 <form
                   target='_blank'
                   onSubmit={onSubmit}
-                  action='https://formsubmit.co/your@email.com '
+                  action='https://formsubmit.co/info@thenextlevellabs.com'
                   method='POST'
                 >
+                  {errors.name &&(
+                    <p className='mt-1 text-red-800'>
+                      {errors.name.type === "required" && "This field is required."}
+                      {errors.name.type === "maxLength" && "Max length is 100 characters."}
+                      
+                    </p>
+                  )}
                   <input
                     className={inputStyle}
                     type='text'
@@ -88,14 +95,14 @@ const ContactUs = ({setSelectedPage}: Props) => {
                       maxLength: 100,
                     })}
                   />
-                  {errors.name &&(
+                  
+                  {errors.email &&(
                     <p className='mt-1 text-red-800'>
-                      {errors.name.type === "required" && "This field is required."}
-                      {errors.name.type === "maxLength" && "Max length is 100 characters."}
+                      {errors.email.type === "required" && "This field is required."}
+                      {errors.email.type === "pattern" && "Invalid email address."}
                       
                     </p>
                   )}
-
                   <input
                     className={inputStyle}
                     type='text'
@@ -105,14 +112,14 @@ const ContactUs = ({setSelectedPage}: Props) => {
                       pattern:/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                     })}
                   />
-                  {errors.email &&(
+                  
+                  {errors.message &&(
                     <p className='mt-1 text-red-800'>
-                      {errors.email.type === "required" && "This field is required."}
-                      {errors.email.type === "pattern" && "Invalid email address."}
+                      {errors.message.type === "required" && "This field is required."}
+                      {errors.message.type === "maxLength" && "Max length is 2000 characters."}
                       
                     </p>
                   )}
-
                   <textarea
                     className={inputStyle}
                     rows={4}
@@ -123,15 +130,9 @@ const ContactUs = ({setSelectedPage}: Props) => {
                       maxLength: 2000,
                     })}
                   />
-                  {errors.message &&(
-                    <p className='mt-1 text-red-800'>
-                      {errors.message.type === "required" && "This field is required."}
-                      {errors.message.type === "maxLength" && "Max length is 2000 characters."}
-                      
-                    </p>
-                  )}
+                  
 
-                  <button type='submit' className='mt-5 text-white font-bold rounded-lg bg-amber-400 px-20 py-3 transition duration-500 hover:text-amber-400 hover:bg-zinc-500'>
+                  <button type='submit' className='mt-5 text-white font-bold rounded-lg bg-[#FF7F50] px-20 py-3 transition duration-500 hover:text-[#FF7F50] hover:bg-[#008080]'>
                     SUBMIT
                   </button>
                 

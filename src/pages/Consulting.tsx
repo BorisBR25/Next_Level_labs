@@ -1,13 +1,12 @@
 //import { motion } from "framer-motion"
 //import useMediaQuery from "../hooks/useMediaQuery"
-
 import VideoPlayer from "../components/VideoPlayer"
 import video from '../assets/images/videoHoney.mp4'
 import cultivationImg from '../assets/images/cultivationImg.png'
 import operationalImg from '../assets/images/operationalImg.jpg'
 import retailImg from '../assets/images/retailImg.jpg'
 import { useState, useEffect } from "react"
-import Footer from "./Footer"
+
 
 
 const Consulting = () => {
@@ -50,17 +49,17 @@ const Consulting = () => {
   
     <section 
     id='consulting'
-    className='gap-16 bg-cover bg-green-950 md:h-full pt-16 pb-16'
+    className='gap-16 bg-cover bg-[#10b4b4] md:h-full pt-16 pb-16'
     style={{
       //backgroundImage:`url(${backImg})`,
       backgroundPosition:'center',
       backgroundSize:'cover',
     }}
     >
-      <div className="bg-green-950 py-20">
+      <div className="bg-[#10b4b4]  py-20">
       <div className="container mx-auto px-4">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-amber-400 mb-6">
+          <h2 className="text-4xl font-bold text-[#fd6128] mb-6">
             Elevate Your Cannabis Operations with Next Level Labs
           </h2>
           <p className="text-xl text-white mb-12">
@@ -76,7 +75,7 @@ const Consulting = () => {
             />
           </div>
           <div className="md:w-1/2 p-6">
-            <h3 className="text-2xl font-bold text-green-900 mb-4">Extraction Techniques</h3>
+            <h3 className="text-2xl font-bold text-[#FF7F50] mb-4">Extraction Techniques</h3>
             <p className="text-gray-600 text-xl mb-4">
               We specialize in a wide range of extraction methods, each carefully optimized to produce superior results.
             </p>
@@ -98,7 +97,7 @@ const Consulting = () => {
             <img src={cultivationImg} alt="Cultivation Expertise" className="w-full h-auto object-cover rounded-lg" />
           </div>
           <div className="md:w-1/2 p-6">
-            <h3 className="text-2xl font-bold text-green-900 mb-4">Cultivation Expertise</h3>
+            <h3 className="text-2xl font-bold text-[#FF7F50] mb-4">Cultivation Expertise</h3>
             <p className="text-gray-600 text-xl mb-4">
               Our consultation services extend beyond extraction. With master growers experienced in large-scale farming, greenhouse management, and indoor operations, we offer unparalleled expertise in cannabis cultivation.
             </p>
@@ -116,7 +115,7 @@ const Consulting = () => {
             <img src={retailImg} alt="Retail Operations and Distribution Services" className="w-full h-auto object-cover rounded-lg" />
           </div>
           <div className="md:w-1/2 p-6">
-            <h3 className="text-2xl font-bold text-green-900 mb-4">Retail Operations and Distribution Services</h3>
+            <h3 className="text-2xl font-bold text-[#FF7F50] mb-4">Retail Operations and Distribution Services</h3>
             <p className="text-gray-600 text-xl mb-4">
               In addition to cultivation and extraction, Next Level Labs brings extensive experience in cannabis retail operations and distribution services.
             </p>
@@ -132,7 +131,7 @@ const Consulting = () => {
             <img src={operationalImg} alt="Licensing and Operational Support" className="w-full h-auto object-cover rounded-lg" />
           </div>
           <div className="md:w-1/2 p-6">
-            <h3 className="text-2xl font-bold text-green-900 mb-4">Licensing and Operational Support</h3>
+            <h3 className="text-2xl font-bold text-[#FF7F50] mb-4">Licensing and Operational Support</h3>
             <p className="text-gray-600 text-xl mb-4">
               Navigating the complexities of licensing and getting your operation up and running can be challenging. Our in-house architects and engineers streamline the entire process, making it faster and easier than any other company on the market.
             </p>
@@ -144,7 +143,7 @@ const Consulting = () => {
 
         {/* Call to Action */}
         <div className="text-center py-16">
-          <h3 className="text-3xl font-bold text-amber-400 mb-2">Why Choose Next Level Labs?</h3>
+          <h3 className="text-3xl font-bold text-[#fd6128] mb-2">Why Choose Next Level Labs?</h3>
           <p className="text-xl text-white mb-8">
             <span className="font-extrabold text-2xl">Industry Expertise: </span>
              Benefit from our extensive experience and deep understanding of the cannabis industry.
@@ -175,7 +174,7 @@ const Consulting = () => {
         </div>
       </div>
     </div>
-      <Footer/>
+      {/* <Footer/> */}
     </section>
     </>
   )
